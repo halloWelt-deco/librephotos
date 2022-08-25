@@ -3,13 +3,13 @@
 Create a directory for the project:
 
 ```sh
-mkdir ~/projects/halloWelt
-codedir=~/projects/halloWelt
-mkdir ~/projects/halloWelt/data
-mkdir ~/projects/halloWelt/data/data
-mkdir ~/projects/halloWelt/data/pgAdmin
-mkdir ~/projects/halloWelt/photos
-cd ~/projects/halloWelt
+mkdir ~/projects/hallowelt
+codedir=~/projects/hallowelt
+mkdir ~/projects/hallowelt/data
+mkdir ~/projects/hallowelt/data/data
+mkdir ~/projects/hallowelt/data/pgadmin
+mkdir ~/projects/hallowelt/photos
+cd ~/projects/hallowelt
 ```
 
 On Windows, create a folder called halloWelt and navigate to it in PowerShell. Create halloWelt/data/data, halloWelt/data/pgAdmin and photos folders.
@@ -35,8 +35,8 @@ git clone https://github.com/halloWelt-deco/librephotos-docker.git
 Set environment variables:
 
 ```sh
-cd librephotos-docker
-cp halloWelt.env .env
+cd ~/projects/hallowelt/librephotos-docker
+cp hallowelt.env .env
 ```
 
 Run the docker containers:
