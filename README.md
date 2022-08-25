@@ -1,3 +1,93 @@
+# Setting up a development environment
+
+Create a directory for the project:
+
+```sh
+mkdir ~/projects/halloWelt
+codedir=~/projects/halloWelt
+mkdir ~/projects/halloWelt/data
+mkdir ~/projects/halloWelt/data/data
+mkdir ~/projects/halloWelt/data/pgAdmin
+mkdir ~/projects/halloWelt/photos
+cd ~/projects/halloWelt
+```
+
+On Windows, create a folder called halloWelt and navigate to it in PowerShell. Create halloWelt/data/data, halloWelt/data/pgAdmin and photos folders.
+
+Pull frontend codebase:
+
+```git
+git clone https://github.com/halloWelt-deco/librephotos-frontend.git
+```
+
+Pull backend codebase:
+
+```git
+git clone https://github.com/halloWelt-deco/librephotos.git
+```
+
+Pull docker repo:
+
+```git
+git clone https://github.com/halloWelt-deco/librephotos-docker.git
+```
+
+Set environment variables:
+
+```sh
+cd librephotos-docker
+cp halloWelt.env .env
+```
+
+Run the docker containers:
+
+```sh
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+```
+
+If you want access to the logs of the running containers use the following command instead:
+
+```sh
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+```
+
+If you use Visual Studio Code, you can also benefit from auto-completion and other goodies. For this, just run 
+
+```sh
+code .
+```
+
+in your Dockerfile folder, which is ~/projects/halloWelt/librephotos-docker.
+
+Visual Studio Code will open and ask you if you want to reopen it in the container. If you do, it will create the images from scratch (first time you do it can take a couple of minutes), and you will have the same Python interpreter LibrePhotos uses internally - and hence the same installed libraries in auto completion, and the same development environment, will be shared by all devs. This includes tools like isort, flake8 and pylint.
+
+Alternatively, you can run the Remote-Containers: Open Folder in Container command from the Command Palette. Note in order to open this container, you must have the required dependencies installed. More details can be found here.
+
+Read the docs at:
+
+https://docs.librephotos.com/5/dev_backend/
+
+https://docs.librephotos.com/5/dev_frontend/
+
+
+## If you are using a different directory structure from what was outlined at the beginning, read this next part:
+
+Edit the codedir variable in the .env file:
+
+```sh
+codedir=/path/to/projects/halloWelt (if this doesn't work, try: ../ )
+```
+
+On Windows, copy the contents of librephotos.env to a new file called .env and get the path of the halloWelt project folder and paste it into the codedir variable.
+
+Set the directories for the photos and data folders in the .env file:
+
+```sh
+scanDirectory=path/to/photos (if this doesn't work, try: ../photos)
+data=/path/to/projects/halloWelt/data/data (if this doen't work, try: ../data/data)
+pgAdminLocation=path/to/projects/halloWelt/data/pgadmin (if this doesn't work, try: ../data/pgAdmin)
+```
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LibrePhotos_ownphotos&metric=alert_status)](https://sonarcloud.io/dashboard?id=LibrePhotos_ownphotos) ![Discord](https://img.shields.io/discord/784619049208250388?style=plastic) ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&style=plastic&up_color=blue&up_message=online&url=https%3A%2F%2Flibrephotos.com)
 [![Read the docs](https://img.shields.io/static/v1?label=Read&message=the%20docs&color=blue&style=plastic)](https://docs.librephotos.com/) ![GitHub contributors](https://img.shields.io/github/contributors/librephotos/librephotos?style=plastic)
 <a href="https://hosted.weblate.org/engage/librephotos/">
