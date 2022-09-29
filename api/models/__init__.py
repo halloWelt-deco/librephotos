@@ -9,6 +9,7 @@ from api.models.long_running_job import LongRunningJob
 from api.models.person import Person
 from api.models.photo import Photo
 from api.models.user import User
+from api.models.trips import TripUser
 
 __all__ = [
     "AlbumAuto",
@@ -22,4 +23,5 @@ __all__ = [
     "Person",
     "Photo",
     "User",
+    "TripUser",
 ]
