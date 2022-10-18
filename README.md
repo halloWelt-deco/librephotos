@@ -163,7 +163,9 @@ pgAdminLocation=path/to/projects/halloWelt/data/pgadmin #(if this doesn't work, 
 
 ---
 ## What does it use?
-
+- **LibrePhotos:** [LibrePhotos](https://github.com/LibrePhotos)
+- **OwnTracks** [Mapbox](https://github.com/owntracks)
+- **NextCloud:** [NextCloud](https://github.com/nextcloud)
 - **Image Conversion:** [ImageMagick](https://github.com/ImageMagick/ImageMagick) 
 - **Video Conversion:** [FFmpeg](https://github.com/FFmpeg/FFmpeg)
 - **Exif Support:** [ExifTool](https://github.com/exiftool/exiftool)
