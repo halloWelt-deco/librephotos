@@ -143,7 +143,7 @@ https://docs.librephotos.com/5/dev_backend/
 https://docs.librephotos.com/5/dev_frontend/
 
 
-## If you are using a different directory structure from what was outlined at the beginning, read this next part:
+#### If you are using a different directory structure from what was outlined at the beginning, read this next part:
 
 Edit the codedir variable in the .env file:
 
