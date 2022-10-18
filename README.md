@@ -4,6 +4,8 @@
 </p>
 <sub>Track your memories</sub>
 
+![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/20221018_153716-COLLAGE.jpg?raw=true)
+
 ![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/journeylink.png?raw=true)
 
 - The hosted application is available here at [https://hallowelt.r18i.me](https://hallowelt.r18i.me/). Username is ```user```, password is ```hallowelt```.
