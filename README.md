@@ -45,6 +45,20 @@ This link has to be accessed from the user’s mobile device for the user’s co
 
 A demo of this process is shown here: [JourneyLink Location Tracking Setup](https://drive.google.com/file/d/1lPj0mJ1qofD7UmBRM7p3a17qmehmz6G5/view?usp=sharing).
 
+#### Setup for OwnTracks mobile app:
+Automatic Setup:
+Visit https://hallowelt.app.link/yourusername on your phone and follow the instructions on screen to download and set up OwnTracks
+
+Manual Setup:
+Download the Android (https://play.google.com/store/apps/details?id=org.owntracks.android&hl=en_AU&gl=US) or iOS app (https://apps.apple.com/us/app/owntracks/id692424691)
+1. Open Preferences -> Connection
+2. Select HTTP as the mode
+3. Configure Host:  https://record.rxh.codes/pub
+4. Fill up the configuration: 
+Username: user 
+Device ID: userphone
+Tracker ID: us 
+
 ### Setting up automatic photo syncing from phone:
 1.) To setup automatic photo syncing, the user needs to download the NextCloud mobile application - [Android](https://play.google.com/store/apps/details?id=com.nextcloud.client) / [iOS](https://apps.apple.com/au/app/nextcloud/id1125420102).
 
