@@ -2,7 +2,12 @@
 <p align="center">
   <img src="https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/logo-white.png?raw=true" />
 </p>
-<sub>Track your memories</sub>
+<p align="center">Track your memories</p>
+
+- Organize and share your photos
+- Track your location and routes while out on adventures
+- View the automatically created albums and route maps and share them with your friends.
+- Completely open source and privacy friendly
 
 ![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/jl-dash.png?raw=true)
 
