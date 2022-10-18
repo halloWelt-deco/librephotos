@@ -14,7 +14,7 @@
 ![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/journeylink.png?raw=true)
 
 - The hosted application is available here at [https://hallowelt.r18i.me](https://hallowelt.r18i.me/). Username is ```user```, password is ```hallowelt```.
-- The Kickstarter video for the project is available [here]().
+- The Kickstarter video for the project is available [here](https://drive.google.com/file/d/1KleiHllb_2dNSi2Ca_Ta-EazWkh4YPtW/view?usp=sharing).
 - You can watch a demo of the interface [here](https://drive.google.com/file/d/12ieg5h2e1IVvF9cSXfctiMNAWiMT3QmY/view?usp=sharing).
 
 ---
