@@ -6,10 +6,6 @@
 
 ![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/journeylink.png?raw=true)
 
-
-![](https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/mockups_main_fhd.png?raw=true)
-<sub>Mockup designed by rawpixel.com / Freepik</sub>
-
 - The hosted application is available here at [https://hallowelt.r18i.me](https://hallowelt.r18i.me/). Username is ```user```, password is ```hallowelt```.
 - The Kickstarter video for the project is available [here]().
 - You can watch a demo of the interface [here](https://drive.google.com/file/d/12ieg5h2e1IVvF9cSXfctiMNAWiMT3QmY/view?usp=sharing).
