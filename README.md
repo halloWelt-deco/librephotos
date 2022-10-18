@@ -1,3 +1,59 @@
+# JourneyLink
+<p align="center">
+  <img src="https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/logo-white.png?raw=true" />
+</p>
+<sub>Track your memories</sub>
+
+![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/journeylink.png?raw=true)
+
+
+![](https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/mockups_main_fhd.png?raw=true)
+<sub>Mockup designed by rawpixel.com / Freepik</sub>
+
+- The hosted application is available here at [https://hallowelt.r18i.me](https://hallowelt.r18i.me/). Username is ```user```, password is ```hallowelt```.
+- The Kickstarter video for the project is available [here]().
+- You can watch a demo of the interface [here](https://drive.google.com/file/d/12ieg5h2e1IVvF9cSXfctiMNAWiMT3QmY/view?usp=sharing).
+
+---
+## Usage Guide
+
+A typical user workflow is as follow:
+
+### On Desktop:
+
+1.) The user visits https://hallowelt.r18i.me, they sign up and create an account. For purposes of the demo, the username is ```user``` and password is ```hallowelt```.
+
+2.) If they want to start location tracking, they click on the "Configure Location Tracking on your phone" button. As they are on desktop, a QR code to the config URL is displayed and they scan it with their phone.
+3.) Once they have scanned the QR Code on their phone, the owntracks app is downloaded and configured automatically.
+
+4.) They can upload photos through the desktop, and view their location tracks in the map.
+
+### On Phone:
+
+1.) The user visits https://hallowelt.r18i.me, (optionally they can use the Add to Home Screen button in Chrome to add the PWA to their phone), they sign up and create an account.
+
+2.) If they want to start location tracking, they click on the "Configure Location Tracking on your phone" button. As they are on phone, clicking on the button will automatically redirect them to the configuration URL(https://hallowelt.app.link/user) and OwnTracks is downloaded and configured automatically.
+
+This link has to be accessed from the user’s mobile device for the user’s configuration to be pulled in automatically.  When downloading OwnTracks for the first time from this screen, please head back to the User Trips page and once again click on the Config button once the app has finished downloading in order to pull in the user configuration.
+
+3.) The user returns back to the JourneyLink web app in browser (or the PWA).
+
+4.) They can upload photos through their phone, and view their location tracks in the map.
+
+A demo of this process is shown here: [JourneyLink Location Tracking Setup](https://drive.google.com/file/d/1lPj0mJ1qofD7UmBRM7p3a17qmehmz6G5/view?usp=sharing).
+
+### Setting up automatic photo syncing from phone:
+1.) To setup automatic photo syncing, the user needs to download the NextCloud mobile application - [Android](https://play.google.com/store/apps/details?id=com.nextcloud.client) / [iOS](https://apps.apple.com/au/app/nextcloud/id1125420102).
+
+The configuration URL for the NextCloud app is https://nchw.r18i.me/
+
+The username and password are the same ones as the JourneyLink account - Username: ```user``` Password: ```hallowelt```
+
+2.) Once configured, the user can go to the Settings and choose which folders they’d want to automatically sync from their phone onto JourneyLink. 
+
+A demo of this process is shown here: [JourneyLink Photo Syncing Setup](https://drive.google.com/file/d/1lITccxy385yTOoXH5hG8iUXRrOjvF3SA/view?usp=sharing).
+
+---
 # Setting up a development environment
 
 Create a directory for the project:
@@ -75,7 +131,7 @@ https://docs.librephotos.com/5/dev_frontend/
 Edit the codedir variable in the .env file:
 
 ```sh
-codedir=/path/to/projects/halloWelt (if this doesn't work, try: ../ )
+codedir=/path/to/projects/halloWelt #(if this doesn't work, try: ../ )
 ```
 
 On Windows, copy the contents of librephotos.env to a new file called .env and get the path of the halloWelt project folder and paste it into the codedir variable.
@@ -83,39 +139,11 @@ On Windows, copy the contents of librephotos.env to a new file called .env and g
 Set the directories for the photos and data folders in the .env file:
 
 ```sh
-scanDirectory=path/to/photos (if this doesn't work, try: ../photos)
-data=/path/to/projects/halloWelt/data/data (if this doen't work, try: ../data/data)
-pgAdminLocation=path/to/projects/halloWelt/data/pgadmin (if this doesn't work, try: ../data/pgAdmin)
+scanDirectory=path/to/photos #(if this doesn't work, try: ../photos)
+data=/path/to/projects/halloWelt/data/data #(if this doen't work, try: ../data/data)
+pgAdminLocation=path/to/projects/halloWelt/data/pgadmin #(if this doesn't work, try: ../data/pgAdmin)
 ```
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LibrePhotos_ownphotos&metric=alert_status)](https://sonarcloud.io/dashboard?id=LibrePhotos_ownphotos) ![Discord](https://img.shields.io/discord/784619049208250388?style=plastic) ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&style=plastic&up_color=blue&up_message=online&url=https%3A%2F%2Flibrephotos.com)
-[![Read the docs](https://img.shields.io/static/v1?label=Read&message=the%20docs&color=blue&style=plastic)](https://docs.librephotos.com/) ![GitHub contributors](https://img.shields.io/github/contributors/librephotos/librephotos?style=plastic)
-<a href="https://hosted.weblate.org/engage/librephotos/">
-<img src="https://hosted.weblate.org/widgets/librephotos/-/librephotos-frontend/svg-badge.svg" alt="Translation status" />
-</a>
-
-# LibrePhotos
-
-![](https://github.com/LibrePhotos/librephotos/blob/dev/screenshots/mockups_main_fhd.png?raw=true)
-<sub>Mockup designed by rawpixel.com / Freepik</sub>
-
-- The [demo is available here](https://demo2.librephotos.com/). User is ```demo```, password is ```demo1234```.
-- You can watch development videos on [Niaz Faridani-Rad's channel](https://www.youtube.com/channel/UCZJ2pk2BPKxwbuCV9LWDR0w)
-- You can join our [Discord](https://discord.gg/xwRvtSDGWb).
-
-## Installation
-
-Step-by-step installation instructions are available in our [documentation](https://docs.librephotos.com/1/)
-
-## How to help out
-- ⭐ **Star** this repository if you like this project!
-- 🚀 **Developing**: Get started in less than 30 minutes by following the [guide here](https://docs.librephotos.com/1/dev_install/)
-- 🗒️ **Documentation**: Improving the documentation is as simple as submitting a pull request [here](https://github.com/LibrePhotos/librephotos.docs)
-- 🧪 **Testing**: If you want to help find bugs, use the ```dev``` tag and update it regulary. If you find a bug, open an issue.
-- 🧑‍🤝‍🧑 **Outreach**: Talk about this project with other people and help them to get started too!
-- 🌐 **Translations**: Make LibrePhotos accessible to more people with [weblate](https://hosted.weblate.org/engage/librephotos/).
-- 💸 [**Donate**](https://github.com/sponsors/derneuere) to the developers of LibrePhotos
-
+---
 ## Features
 
   - Support for all types of photos including raw photos
@@ -130,6 +158,7 @@ Step-by-step installation instructions are available in our [documentation](http
   - Semantic image search
   - Search by metadata
 
+---
 ## What does it use?
 
 - **Image Conversion:** [ImageMagick](https://github.com/ImageMagick/ImageMagick) 
@@ -140,3 +169,6 @@ Step-by-step installation instructions are available in our [documentation](http
 - **Image captioning:** [im2txt](https://github.com/HughKu/Im2txt), 
 - **Scene classification** [places365](http://places.csail.mit.edu/)
 - **Reverse geocoding:** [Mapbox](https://www.mapbox.com/): You need to have an API key. First 50,000 geocode lookups are free every month.
+
+## Technical Architecture
+![](https://github.com/halloWelt-deco/librephotos/blob/dev/screenshots/JourneyLink_Tech_Architecture.jpg?raw=true)
